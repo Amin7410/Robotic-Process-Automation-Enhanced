@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Drawing;
-using sever; // Namespace chứa OSInteractions và Protocol
+using sever; 
 
 namespace sever
 {
     public class PipeServer
     {
         private readonly string _pipeName;
-        private const int DefaultBufferSize = 16384; // 16KB, có thể tăng nếu ảnh Base64 lớn
+        private const int DefaultBufferSize = 16384; 
 
         public PipeServer(string pipeName)
         {
@@ -502,5 +502,3 @@ namespace sever
         }
     }
 }
-
-// along with this program.  If not, see <https://www.gnu.org/licenses/>.
