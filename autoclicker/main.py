@@ -2,7 +2,6 @@
 # Copyright (C) 2025 Đinh Khởi Minh
 
 # main.py
-
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
