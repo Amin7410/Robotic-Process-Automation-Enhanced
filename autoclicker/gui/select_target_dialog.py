@@ -7,9 +7,6 @@ from typing import List, Optional
 logger = logging.getLogger(__name__)
 
 class SelectTargetDialog(tk.Toplevel):
-    """
-    Cửa sổ dialog modal để người dùng chọn một target (Job hoặc Profile) từ danh sách.
-    """
     def __init__(self, parent, target_list: List[str], dialog_title: str = "Select Target", prompt: str = "Select an item:"):
         super().__init__(parent)
         self.title(dialog_title)
@@ -101,19 +98,3 @@ class SelectTargetDialog(tk.Toplevel):
         """Xử lý khi nhấn Cancel hoặc đóng cửa sổ."""
         self.selected_target = None 
         self.destroy()
-
-# Auto Clicker Enhanced
-# Copyright (C) <2025> <Đinh Khởi Minh>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
