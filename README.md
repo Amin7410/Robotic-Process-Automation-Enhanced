@@ -215,6 +215,7 @@ Tesseract OCR:
     Otherwise, manually configure tesseract_cmd in core/condition.py.
 
 ## Project Structure
+```text
 ├──autoclicker/
 │   ├── python_csharp_bridge.py
 │   ├── main.py
