@@ -1393,19 +1393,3 @@ CONDITION_TYPE_SETTINGS: Dict[str, Dict[str, Any]] = {
 ACTION_CONDITION_TYPES_INTERNAL = list(CONDITION_TYPE_SETTINGS.keys())
 ACTION_CONDITION_TYPES_DISPLAY = [settings["display_name"] for settings in CONDITION_TYPE_SETTINGS.values()]
 ACTION_CONDITION_DISPLAY_TO_INTERNAL_MAP = {settings["display_name"]: type_key for type_key, settings in CONDITION_TYPE_SETTINGS.items()}
-
-# Auto Clicker Enhanced
-# Copyright (C) <2025> <Đinh Khởi Minh>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
