@@ -24,11 +24,6 @@ except ImportError:
 
 
 class CoordinateCaptureWindow:
-    """
-    Lớp điều phối việc chọn một hoặc nhiều điểm tọa độ bằng cách gọi C# service.
-    Việc gọi C# được thực hiện trong một thread riêng để không làm block GUI.
-    """
-
     def __init__(self, master: tk.Tk | tk.Toplevel,
                  callback: Callable[[Optional[List[Dict[str, int]] | Tuple[int, int] | Tuple[Tuple[int,int], Tuple[int,int]]]], None],
                  num_points: int = 1):
@@ -45,7 +40,6 @@ class CoordinateCaptureWindow:
         self.capture_thread.start()
 
     def _disable_master_window(self, disable: bool):
-        """Vô hiệu hóa hoặc kích hoạt lại cửa sổ cha một cách an toàn."""
         try:
             if hasattr(self.master_window, 'winfo_exists') and self.master_window.winfo_exists():
                 if hasattr(self.master_window, 'attributes'):
@@ -56,9 +50,6 @@ class CoordinateCaptureWindow:
             logger.error(f"CoordinateCaptureWindow: Error changing master window state: {e}")
 
     def _initiate_csharp_point_select_threaded(self):
-        """
-        Hàm này chạy trong một thread riêng để gọi C# service mà không làm block GUI.
-        """
         captured_points_list: Optional[List[Dict[str, int]]] = None
         error_message_for_user: Optional[str] = None
 
@@ -97,9 +88,6 @@ class CoordinateCaptureWindow:
 
 
     def _handle_capture_result_on_main_thread(self, result_data_list: Optional[List[Dict[str, int]]], error_msg_for_user: Optional[str]):
-        """
-        Hàm này chạy trên main thread của Tkinter để xử lý kết quả hoặc lỗi.
-        """
         logger.debug(f"CoordinateCaptureWindow (MainThread): Handling capture result. Data: {'Yes' if result_data_list else 'No'}, Error: '{error_msg_for_user or 'None'}'")
 
         self._disable_master_window(False)
@@ -146,20 +134,3 @@ class CoordinateCaptureWindow:
                 logger.error(f"CoordinateCaptureWindow (MainThread): Error executing callback: {e}", exc_info=True)
                 if hasattr(self.master_window, 'winfo_exists') and self.master_window.winfo_exists():
                      messagebox.showerror("Callback Error", f"Error processing captured point data:\n{e}", parent=self.master_window)
-
-# Auto Clicker Enhanced
-# Copyright (C) <2025> <Đinh Khởi Minh>
-#
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
