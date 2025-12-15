@@ -28,8 +28,6 @@ Auto Clicker Enhanced: Một Công Cụ Tự Động Hóa UI Mạnh Mẽ
 Auto Clicker Enhanced là một ứng dụng tự động hóa giao diện người dùng (UI automation) đa năng, được thiết kế để đơn giản hóa và tăng tốc các tác vụ lặp đi lặp lại trên máy tính của bạn. Bằng cách kết hợp sức mạnh của Python cho giao diện người dùng linh hoạt và logic nghiệp vụ, cùng với C# cho tương tác cấp thấp với hệ điều hành Windows, công cụ này cung cấp một giải pháp đáng tin cậy và hiệu quả cho nhiều nhu cầu tự động hóa.
 Dù bạn cần tự động hóa các cú nhấp chuột đơn giản, chuỗi phím phức tạp, nhập liệu văn bản, hoặc các luồng công việc phức tạp dựa trên trạng thái màn hình, Auto Clicker Enhanced đều có thể xử lý. Với các tính năng nâng cao như AI Brain và Drawing Templates, nó mở ra cánh cửa cho các kịch bản tự động hóa thông minh và trực quan hơn.
 
-======================================================================================================================================================
-
 ## Tính năng
     Jobs (Công việc):
         Tạo và quản lý các chuỗi hành động tuần tự để thực hiện các tác vụ tự động hóa.
@@ -85,8 +83,6 @@ Dù bạn cần tự động hóa các cú nhấp chuột đơn giản, chuỗi 
         Sử dụng một dịch vụ phụ trợ được viết bằng C# (Windows) để thực hiện các thao tác chuột/bàn phím và tương tác với hệ thống.
         Giao tiếp qua Named Pipes để đảm bảo độ tin cậy, hiệu suất cao và khả năng tránh các xung đột thường gặp khi tự động hóa UI bằng Python thuần túy.
         Hỗ trợ các cửa sổ tương tác (overlay trong suốt) để chọn điểm, vùng, hoặc vẽ đường đi trên màn hình một cách trực quan.
-
-======================================================================================================================================================
 
 ## Kiến trúc
 
@@ -147,8 +143,6 @@ C# Layer (OS Interaction Service):
 
     Communication Protocol: Được định nghĩa trong sever/Protocol.cs (JSON request/response).
 
-======================================================================================================================================================
-
 ## Cài đặt
 
 Yêu cầu hệ thống
@@ -191,7 +185,7 @@ Cài đặt và cấu hình Tesseract OCR (Tùy chọn, nếu bạn dùng tính 
 + Đảm bảo tesseract.exe nằm trong biến môi trường PATH của hệ thống, HOẶC
 + Cấu hình đường dẫn trực tiếp trong tệp core/condition.py (tìm dòng pytesseract.pytesseract.tesseract_cmd = ...).
 
-======================================================================================================================================================
+
 ## Cách sử dụng
 
 Để khởi chạy ứng dụng:
@@ -232,57 +226,55 @@ Tesseract OCR
 
 ## Cấu trúc dự án
 
-├──autoclicker/
-│   ├── python_csharp_bridge.py
-│   ├── main.py
-│   ├── core/
-│   │   ├── job.py
-│   │   ├── action.py
-│   │   ├── job_run_condition.py
-│   │   ├── condition.py
-│   │   ├── condition_manager.py
-│   │   ├── trigger.py
-│   │   ├── observer.py
-│   │   └── job_executor.py
-│   ├── gui/
-│   │   ├── main_window.py
-│   │   ├── job_list.py
-│   │   ├── job_edit.py
-│   │   ├── action_edit_window.py
-│   │   ├── action_settings.py
-│   │   ├── job_run_condition_settings.py
-│   │   ├── key_recorder.py
-│   │   ├── trigger_list.py
-│   │   ├── trigger_edit.py
-│   │   ├── shared_condition_list.py
-│   │   ├── shared_condition_edit_window.py
-│   │   ├── shape_template_list.py
-│   │   ├── shape_template_editor.py
-│   │   ├── ai_brain_management_tab.py
-│   │   ├── select_target_dialog.py
-│   │   ├── coordinate_capture_window.py
-│   │   ├── drawing_capture_window.py
-│   │   └── screen_capture_window.py
-│   ├── utils/
-│   │   ├── config_loader.py
-│   │   ├── image_storage.py
-│   │   ├── image_processing.py
-│   │   ├── image_analysis.py
-│   │   ├── color_utils.py
-│   │   ├── parsing_utils.py
-│   │   └── drawing_utils.py
-│   └── server/
-│       ├── bin/
-│       ├── obj/
-│       ├── Program.cs
-│       ├── OSInteractions.cs
-│       ├── InteractiveCaptureService.cs
-│       └── server.csproj
-├── profiles/
-├── captured_images/
-└── sever/
-
-======================================================================================================================================================
+    ├──autoclicker/
+    │   ├── python_csharp_bridge.py
+    │   ├── main.py
+    │   ├── core/
+    │   │   ├── job.py
+    │   │   ├── action.py
+    │   │   ├── job_run_condition.py
+    │   │   ├── condition.py
+    │   │   ├── condition_manager.py
+    │   │   ├── trigger.py
+    │   │   ├── observer.py
+    │   │   └── job_executor.py
+    │   ├── gui/
+    │   │   ├── main_window.py
+    │   │   ├── job_list.py
+    │   │   ├── job_edit.py
+    │   │   ├── action_edit_window.py
+    │   │   ├── action_settings.py
+    │   │   ├── job_run_condition_settings.py
+    │   │   ├── key_recorder.py
+    │   │   ├── trigger_list.py
+    │   │   ├── trigger_edit.py
+    │   │   ├── shared_condition_list.py
+    │   │   ├── shared_condition_edit_window.py
+    │   │   ├── shape_template_list.py
+    │   │   ├── shape_template_editor.py
+    │   │   ├── ai_brain_management_tab.py
+    │   │   ├── select_target_dialog.py
+    │   │   ├── coordinate_capture_window.py
+    │   │   ├── drawing_capture_window.py
+    │   │   └── screen_capture_window.py
+    │   ├── utils/
+    │   │   ├── config_loader.py
+    │   │   ├── image_storage.py
+    │   │   ├── image_processing.py
+    │   │   ├── image_analysis.py
+    │   │   ├── color_utils.py
+    │   │   ├── parsing_utils.py
+    │   │   └── drawing_utils.py
+    │   └── server/
+    │       ├── bin/
+    │       ├── obj/
+    │       ├── Program.cs
+    │       ├── OSInteractions.cs
+    │       ├── InteractiveCaptureService.cs
+    │       └── server.csproj
+    ├── profiles/
+    ├── captured_images/
+    └── sever/
 
 ## Đóng góp
 Chào mừng mọi đóng góp! Nếu bạn muốn cải thiện dự án này:
@@ -293,10 +285,8 @@ Commit các thay đổi của bạn (git commit -m 'Add some AmazingFeature').
 Push lên nhánh của bạn (git push origin feature/AmazingFeature).
 Mở một Pull Request.
 
-======================================================================================================================================================
-
 ## Giấy phép
-Dự án này được cấp phép theo Giấy phép MIT. Xem tệp `LICENSE` để biết thêm chi tiết.
+Dự án này được cấp phép theo Giấy phép GPLv3. Xem tệp `LICENSE` để biết thêm chi tiết.
 
 ======================================================================================================================================================
 
