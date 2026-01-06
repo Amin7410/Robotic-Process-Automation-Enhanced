@@ -9,7 +9,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms; // Required for Form, Keys, PaintEventArgs, etc.
 
-namespace sever
+namespace server
 {
     public class InteractiveCaptureService : IDisposable
     {

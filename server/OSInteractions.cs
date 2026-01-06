@@ -14,7 +14,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Threading.Tasks;
 
-namespace sever
+namespace server
 {
     public static class OSInteractions
     {

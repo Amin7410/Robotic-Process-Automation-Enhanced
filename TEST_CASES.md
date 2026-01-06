@@ -8,7 +8,7 @@ We have provided an automated test runner that validates the core "Bridge" conne
 
 ### Prerequisites
 1.  **Build the C# Project**: Ensure `sever.exe` is built (Debug mode).
-    -   Path: `sever/bin/Debug/net9.0-windows/sever.exe`
+    -   Path: `server/bin/Debug/net9.0-windows/server.exe`
 2.  **Dependencies**: Ensure Python requirements are installed (`pip install -r autoclicker/requirements.txt`).
 
 ### Running the Tests
@@ -19,7 +19,7 @@ python tests/run_tests.py
 ```
 
 ### What Happens?
-1.  **Server Launch**: The script attempts to start `sever.exe`.
+1.  **Server Launch**: The script attempts to start `server.exe`.
 2.  **Test App Launch**: A dummy window "Auto Clicker Test Subject" will open.
 3.  **Bridge Check**: The script sends a "Ping" / "Get Screen Size" command to the C# service.
     -   *Pass*: You see `[SUCCESS] Bridge Connected!`.

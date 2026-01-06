@@ -10,9 +10,9 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from autoclicker.python_csharp_bridge import OSInteractionClient
 
 def start_sever():
-    # Attempt to locate sever.exe
+    # Attempt to locate server.exe
     # Assuming standard debug build path from the user's structure
-    sever_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'sever', 'bin', 'Debug', 'net9.0-windows', 'sever.exe'))
+    sever_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'server', 'bin', 'Debug', 'net9.0-windows', 'server.exe'))
     
     if not os.path.exists(sever_path):
         print(f"[FAIL] Could not find sever.exe at: {sever_path}")

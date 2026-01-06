@@ -7,6 +7,8 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RootNamespace>server</RootNamespace>
+    <AssemblyName>server</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

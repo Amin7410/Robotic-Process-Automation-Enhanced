@@ -10,7 +10,7 @@ using System.Text.Json.Nodes;
 using System.Drawing;
 using sever; 
 
-namespace sever
+namespace server
 {
     public class PipeServer
     {

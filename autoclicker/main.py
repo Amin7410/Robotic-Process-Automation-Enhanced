@@ -21,22 +21,23 @@ logger = logging.getLogger(__name__)
 
 csharp_service_process: subprocess.Popen | None = None
 
-CSHARP_EXE_NAME = "sever.exe" 
+CSHARP_EXE_NAME = "server.exe" 
 
 if getattr(sys, 'frozen', False):
     application_root = os.path.dirname(sys.executable) 
     
-    csharp_bundle_dir_in_frozen = os.path.join(application_root, "_internal", "sever_bundle") 
+    csharp_bundle_dir_in_frozen = os.path.join(application_root, "_internal", "server_bundle") 
     
     if not os.path.exists(csharp_bundle_dir_in_frozen) or not os.path.isdir(csharp_bundle_dir_in_frozen):
-        csharp_bundle_dir_in_frozen = os.path.join(application_root, "sever_bundle")
+        csharp_bundle_dir_in_frozen = os.path.join(application_root, "server_bundle")
     
     csharp_exe_full_path = os.path.join(csharp_bundle_dir_in_frozen, CSHARP_EXE_NAME)
     logger.debug(f"Running as frozen app. C# EXE path: {csharp_exe_full_path}")
 else:
     current_script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.abspath(os.path.join(current_script_dir, os.pardir))
-    csharp_dev_build_dir = os.path.join(project_root, "sever", "bin", "Debug", "net9.0-windows","win-x64","publish")
+    # Standard debug path
+    csharp_dev_build_dir = os.path.join(project_root, "server", "bin", "Debug", "net9.0-windows")
     csharp_exe_full_path = os.path.join(csharp_dev_build_dir, CSHARP_EXE_NAME)
     logger.debug(f"Running in dev environment. C# EXE path: {csharp_exe_full_path}")
 

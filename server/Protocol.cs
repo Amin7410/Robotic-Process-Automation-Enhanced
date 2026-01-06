@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Text.Json.Serialization;
 using System.Text.Json.Nodes;
 
-namespace sever
+namespace server
 {
     public class ClientRequest
     {
