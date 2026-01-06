@@ -238,7 +238,7 @@ Push: git push origin feature/AmazingFeature.
 Open a Pull Request.
 
 ## License
-This project is licensed under the GPLv3 License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
 For questions or support, please open an Issue in this repository.
