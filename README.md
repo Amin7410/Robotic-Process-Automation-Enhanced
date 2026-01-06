@@ -4,7 +4,7 @@ Auto Clicker Enhanced: A Powerful UI Automation Tool
 
 ![alt text](https://img.shields.io/badge/C%23-.NET-purple.svg?logo=csharp&logoColor=white)
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > [!IMPORTANT]
 > **PROJECT STATUS: INDEFINITELY SUSPENDED**
