@@ -6,6 +6,17 @@ Auto Clicker Enhanced: A Powerful UI Automation Tool
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+> [!IMPORTANT]
+> **PROJECT STATUS: INDEFINITELY SUSPENDED**
+>
+> After careful consideration, I have decided to **indefinitely suspend** the development and maintenance of this project.
+>
+> While this project served as a significant milestone as my first major endeavor as a student—providing immense practical value and critical software engineering lessons—the current pace of technological advancement has outstripped the project's original architectural vision. Continuing development in its current state would yield diminishing returns relative to the resources required, without achieving the technological breakthroughs initially envisioned.
+>
+> This is a strategic pause rather than an abandonment. I intend to revisit this concept when the timing is right and I have acquired the advanced capabilities necessary to fully realize the potential of this tool.
+>
+> Thank you for your interest and support.
+
 ## Table of Contents
 - Introduction
 - Features
@@ -29,11 +40,8 @@ Auto Clicker Enhanced is a versatile user interface (UI) automation application 
 
 Whether you need to automate simple mouse clicks, complex key sequences, text input, or intricate workflows based on screen states, Auto Clicker Enhanced can handle it all. With advanced features such as AI Brain and Drawing Templates, it opens the door to more intelligent and adaptive automation scenarios.
 
-⚠️ **Code quality note:**  
+⚠️ **Status of Project:**  
 The current codebase prioritizes functionality, experimentation, and system behavior exploration over strict clean code practices. As a result, parts of the application may contain tightly coupled components, large modules, and technical debt.
-
-Improving code structure, modularity, and maintainability is an **ongoing and planned effort**, and future updates will focus on refactoring toward cleaner architecture, better separation of concerns, and more maintainable design patterns.
-
 
 ## Features
 
