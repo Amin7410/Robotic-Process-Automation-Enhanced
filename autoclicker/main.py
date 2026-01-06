@@ -1,6 +1,3 @@
-# SPDX-License-Identifier: GPL-3.0-or-later
-# Copyright (C) 2025 Đinh Khởi Minh
-
 # main.py
 import tkinter as tk
 from tkinter import ttk
