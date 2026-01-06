@@ -228,58 +228,6 @@ Tesseract OCR:
 
     Otherwise, manually configure tesseract_cmd in core/condition.py.
 
-## Project Structure
-
-    ├──autoclicker/
-    │   ├── python_csharp_bridge.py
-    │   ├── main.py
-    │   ├── core/
-    │   │   ├── job.py
-    │   │   ├── action.py
-    │   │   ├── job_run_condition.py
-    │   │   ├── condition.py
-    │   │   ├── condition_manager.py
-    │   │   ├── trigger.py
-    │   │   ├── observer.py
-    │   │   └── job_executor.py
-    │   ├── gui/
-    │   │   ├── main_window.py
-    │   │   ├── job_list.py
-    │   │   ├── job_edit.py
-    │   │   ├── action_edit_window.py
-    │   │   ├── action_settings.py
-    │   │   ├── job_run_condition_settings.py
-    │   │   ├── key_recorder.py
-    │   │   ├── trigger_list.py
-    │   │   ├── trigger_edit.py
-    │   │   ├── shared_condition_list.py
-    │   │   ├── shared_condition_edit_window.py
-    │   │   ├── shape_template_list.py
-    │   │   ├── shape_template_editor.py
-    │   │   ├── ai_brain_management_tab.py
-    │   │   ├── select_target_dialog.py
-    │   │   ├── coordinate_capture_window.py
-    │   │   ├── drawing_capture_window.py
-    │   │   └── screen_capture_window.py
-    │   ├── utils/
-    │   │   ├── config_loader.py
-    │   │   ├── image_storage.py
-    │   │   ├── image_processing.py
-    │   │   ├── image_analysis.py
-    │   │   ├── color_utils.py
-    │   │   ├── parsing_utils.py
-    │   │   └── drawing_utils.py
-    │   └── server/
-    │       ├── bin/
-    │       ├── obj/
-    │       ├── Program.cs
-    │       ├── OSInteractions.cs
-    │       ├── InteractiveCaptureService.cs
-    │       └── server.csproj
-    ├── profiles/
-    ├── captured_images/
-    └── sever/
-
 ## Contribution
 Contributions are welcome! To improve this project:
 Fork the repository.
