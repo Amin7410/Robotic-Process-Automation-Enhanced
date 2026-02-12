@@ -1,4 +1,4 @@
-Auto Clicker Enhanced: A Powerful UI Automation Tool
+Robotic-Process-Automation-Enhanced Enhanced: A Powerful UI Automation Tool
 
 ![alt text](https://img.shields.io/badge/Python-3.8%2B-blue.svg?logo=python&logoColor=white)
 
