@@ -1,4 +1,4 @@
-Robotic-Process-Automation-Enhanced Enhanced: A Powerful UI Automation Tool
+Robotic-Process-Automation-Enhanced : A Powerful UI Automation Tool
 
 ![alt text](https://img.shields.io/badge/Python-3.8%2B-blue.svg?logo=python&logoColor=white)
 
@@ -36,7 +36,7 @@ Robotic-Process-Automation-Enhanced Enhanced: A Powerful UI Automation Tool
 
 ## Introduction
 
-Auto Clicker Enhanced is a versatile user interface (UI) automation application designed to simplify and accelerate repetitive tasks on your computer. By combining the power of Python for flexible UI and business logic with C# for low-level interaction with the Windows operating system, this tool provides a reliable and efficient solution for various automation needs.
+Robotic-Process-Automation-Enhanced is a versatile user interface (UI) automation application designed to simplify and accelerate repetitive tasks on your computer. By combining the power of Python for flexible UI and business logic with C# for low-level interaction with the Windows operating system, this tool provides a reliable and efficient solution for various automation needs.
 
 Whether you need to automate simple mouse clicks, complex key sequences, text input, or intricate workflows based on screen states, Auto Clicker Enhanced can handle it all. With advanced features such as AI Brain and Drawing Templates, it opens the door to more intelligent and adaptive automation scenarios.
 
